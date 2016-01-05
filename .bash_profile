@@ -2,7 +2,7 @@
 export PATH=/usr/local/bin:/usr/local/sbin:${PATH}
 
 # Virtualenv Wrapper
-export WORKON_HOME=$HOME/.virtualenvs
+export WORKON_HOME=$HOME/.venvs
 source /usr/local/bin/virtualenvwrapper.sh
 
 # History
@@ -34,3 +34,7 @@ if which rbenv > /dev/null; then eval "$(rbenv init -)"; fi
 
 # Global .gitignore
 git config --global core.excludesfile ~/.gitignore_global
+
+# Encoding
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
